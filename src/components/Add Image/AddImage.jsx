@@ -15,7 +15,7 @@ export default function AddImage({setPhotos}) {
 	
 	const handleUpload = (e) => {
 		e.preventDefault()
-		fetch(`https://final-project-vc.web.app/pictures`,{
+		fetch(`https://final-project-vc.web.app/theroses`,{
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

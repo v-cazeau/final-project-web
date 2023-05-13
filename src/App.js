@@ -14,8 +14,8 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path= "/" element={<Home />}/>
-        <Route path= "/pictures" element={<SlideShow photos = {photos} setPhotos ={setPhotos} />}/>
-        <Route path= "/upload" element={<UploadPage/>}/>
+        <Route path= "/theroses" element={<SlideShow photos = {photos} setPhotos ={setPhotos} />}/>
+        <Route path= "/theroses/upload" element={<UploadPage/>}/>
       </Routes>
      </BrowserRouter>
      </>
