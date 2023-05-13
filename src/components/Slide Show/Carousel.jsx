@@ -1,5 +1,5 @@
 
-import PhotoGalleryCollection from './PhotoGalleryCollection.jsx';
+import PhotoGalleryCollection from './PictureGalleryCollection.jsx';
 
 export default function Carousel() {
     const [ thePhotos, setThePhotos] = useState(); 

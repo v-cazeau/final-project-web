@@ -6,7 +6,7 @@ import UploadPage from './scenes/UploadPage.jsx';
 import './style/App.css';
 
 function App() {
-  const [ photos, setPhotos ] = useState();
+  const [ pictures, setPictures ] = useState();
 
   return (
     <div className="App">
@@ -14,7 +14,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path= "/" element={<Home />}/>
-        <Route path= "/theroses" element={<SlideShow photos = {photos} setPhotos ={setPhotos} />}/>
+        <Route path= "/theroses" element={<SlideShow pictures = {pictures} setPictures ={setPictures} />}/>
         <Route path= "/theroses/upload" element={<UploadPage/>}/>
       </Routes>
      </BrowserRouter>
