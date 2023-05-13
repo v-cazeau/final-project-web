@@ -1,5 +1,5 @@
 import {  useEffect, useState } from 'react'; 
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 export default function ShowAllPics ({ pictures, setPictures }) {
 		const [showPictures, setShowPictures] = useState([
@@ -45,7 +45,7 @@ export default function ShowAllPics ({ pictures, setPictures }) {
 												)
 											)
 										}
-                    <Botton onClick={ handleDelete }> DELETE </Botton>
+                    <Button onClick={ handleDelete }> DELETE </Button>
                 </Card>
 								</Col>
 						</Row>
