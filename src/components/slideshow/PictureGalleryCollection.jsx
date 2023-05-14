@@ -2,16 +2,16 @@ import {  useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 export default function ShowAllPics ({ pictures, setPictures }) {
-		const [showPictures, setShowPictures] = useState([
-				region, country, image, description, location, id
-		]);
+		// const [showPictures, setShowPictures] = useState([
+		// 		region, country, image, description, location, id
+		// ]);
 
-		useEffect(() =>{
-				fetch('https:https://final-project-vc.web.app/theroses')
-				.then(resp => resp.json())
-				.then(setPictures)
-				.catch(alert)
-		}, []);
+		// useEffect(() =>{
+		// 		fetch('https://final-project-vc.web.app/theroses')
+		// 		.then(resp => resp.json())
+		// 		.then(setPictures)
+		// 		.catch(alert)
+		// }, []);
 
 		const handleDelete = (picId) => {
 			fetch(`https://final-project-vc.web.app/theroses/${picId}`, {
@@ -36,16 +36,17 @@ export default function ShowAllPics ({ pictures, setPictures }) {
 											? "Loading"
 											: pictures.map(
 												(pictures) => (
-													<div key = { pictures.id } className= "picture-card">
-															<img src = {pictures.country} alt="" />
+													<div key = { pictures._id } className= "picture-card">
 															<h2>{pictures.region}</h2>
+															<h3>{pictures.country}</h3>
+															<img src = {pictures.image} alt="" width={300}/>
 															<p>Decription: {pictures.description}</p>
 															<p>Location: {pictures.location}</p>
+															<Button onClick={() => handleDelete(pictures._id) }> DELETE </Button>
 													</div>
 												)
 											)
 										}
-                    <Button onClick={ handleDelete }> DELETE </Button>
                 </Card>
 								</Col>
 						</Row>

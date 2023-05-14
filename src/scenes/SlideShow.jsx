@@ -1,10 +1,10 @@
 import PictureGalleryCollection from '../components/slideshow/PictureGalleryCollection.jsx'
 
-export default function SlideShow() {
+export default function SlideShow({ pictures, setPictures }) {
     return (
         <>
-        <PictureGalleryCollection />
-         <>Carousel goes here</>
+        <>Carousel goes here</>
+        <PictureGalleryCollection pictures = {pictures} setPictures = {setPictures}/>
         </>
     )
 }
