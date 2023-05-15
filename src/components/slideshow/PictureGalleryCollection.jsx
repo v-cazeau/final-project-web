@@ -6,12 +6,12 @@ export default function ShowAllPics ({ pictures, setPictures }) {
 		// 		region, country, image, description, location, id
 		// ]);
 
-		// useEffect(() =>{
-		// 		fetch('https://final-project-vc.web.app/theroses')
-		// 		.then(resp => resp.json())
-		// 		.then(setPictures)
-		// 		.catch(alert)
-		// }, []);
+		useEffect(() =>{
+				fetch('https://final-project-vc.web.app/theroses')
+				.then(resp => resp.json())
+				.then(setPictures)
+				.catch(alert)
+		}, []);
 
 		const handleDelete = (picId) => {
 			fetch(`https://final-project-vc.web.app/theroses/${picId}`, {

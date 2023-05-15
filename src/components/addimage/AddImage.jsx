@@ -12,6 +12,8 @@ export default function AddImage({ setPictures }) {
   	const handleOpen = () => setOpenModal(true)
   	const handleClose = () => setOpenModal(false)
 
+
+
   function convertFiles(files) {
 	if (files) {
 		const fileRef = files[0] || ""
@@ -34,7 +36,7 @@ export default function AddImage({ setPictures }) {
 			}, 
 			body: JSON.stringify({region, country, image, description, location })
 		})
-		.then(resp => resp.json())
+		.then(res => res.json())
 		.then(data => {
 			if(data.message){
 				alert(data.message)
@@ -59,7 +61,7 @@ export default function AddImage({ setPictures }) {
     <>
     <Button onClick= { handleOpen }> Upload Photo </Button>
     <Modal show={ openModal } onHide= { handleClose }  >
-    	<Form onSubmit={ handleUpload }>
+    	<Form>
     		<Form.Group>
 				  <Form.Label>Region</Form.Label>
 					<Form.Control
