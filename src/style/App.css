@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  background: url("https://giphy.com/embed/l5JbspfwZ0yjHjlJ0K");
 }
 
 @media (prefers-reduced-motion: no-preference) {

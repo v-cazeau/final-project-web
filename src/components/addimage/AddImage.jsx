@@ -7,6 +7,7 @@ export default function AddImage({ setPictures }) {
 	const [ image, setImage ] = useState(""); 
 	const [ description, setDescription ] = useState("");
 	const [ location, setLocation ] = useState(""); 
+	const [ message, setMessage ] = useState("")
   	const [ openModal, setOpenModal ] = useState(""); 
   
   	const handleOpen = () => setOpenModal(true)
@@ -42,18 +43,13 @@ export default function AddImage({ setPictures }) {
 				alert(data.message)
 				return
 			}
-			setPictures(data);
+			// setPictures(data);
 			setOpenModal(false)
 			setRegion("")
 			setCountry("")
 			setDescription("")
 			setLocation("")
-			
-			// const region = data.region;
-			// const country = data.country;
-			// const image = data.image;
-			// const description = data.description;
-			// const location = data.location;
+			setMessage(`A Rose has been added to the World.`)
 		})
 	}
 	
@@ -61,43 +57,51 @@ export default function AddImage({ setPictures }) {
     <>
     <Button onClick= { handleOpen }> Upload Photo </Button>
     <Modal show={ openModal } onHide= { handleClose }  >
-    	<Form>
-    		<Form.Group>
-				  <Form.Label>Region</Form.Label>
-					<Form.Control
-						type = "text"
-						value = {region}
-						placeholder = "Region"
-						onChange = {e => setRegion(e.target.value)} />
-        		</Form.Group>
-				<Form.Group>
-					<Form.Label>Country</Form.Label>
-					<Form.Control 
+    	<Form newClass = "upload-form-modal">
+			<Form.Group>
+				<Form.Label>Region: </Form.Label>
+				<Form.Control
 					type = "text"
-					value = {country}
-					placeholder = "Country"
-					onChange={e => setCountry(e.target.value)} />
-				</Form.Group>
-
-				<input type = "file" onChange={(e) => convertFiles(e.target.files)} />
-
-				<Form.Group>
-					<Form.Label>Description</Form.Label>
-					<Form.Control 
-					type = "text"
-					value = {description}
-					placeholder = "Description"
-					onChange= {e => setDescription(e.target.value)}/>
-				</Form.Group>
-				<Form.Group>
-					<Form.Label>Location</Form.Label>
-					<Form.Control 
-					type = "text"
-					value = {location}
-					placeholder = "Location"
-					onChange= {e => setLocation(e.target.value)}/>
-				</Form.Group>
-		<Button onClick={ handleUpload }>Upload Photos</Button>
+					value = {region}
+					placeholder = "Region"
+					onChange = {e => setRegion(e.target.value)} />
+			</Form.Group>
+			<br />
+			<Form.Group>
+				<Form.Label>Country: </Form.Label>
+				<Form.Control 
+				type = "text"
+				value = {country}
+				placeholder = "Country"
+				onChange={e => setCountry(e.target.value)} />
+			</Form.Group>
+			<br />
+			<Form.Group>
+				<Form.Label>Image: </Form.Label>
+				<Form.Control 
+					type = "file" 
+					onChange={(e) => convertFiles(e.target.files)} />
+			</Form.Group>
+			<br />
+			<Form.Group>
+				<Form.Label>Description: </Form.Label>
+				<Form.Control 
+				type = "text"
+				value = {description}
+				placeholder = "Description"
+				onChange= {e => setDescription(e.target.value)}/>
+			</Form.Group>
+			<br />
+			<Form.Group>
+				<Form.Label>Location: </Form.Label>
+				<Form.Control 
+				type = "text"
+				value = {location}
+				placeholder = "Location"
+				onChange= {e => setLocation(e.target.value)}/>
+			</Form.Group>
+			<br />
+		<Button onClick={ handleUpload }>Submit</Button>
       </Form>
     </Modal>
     </>
