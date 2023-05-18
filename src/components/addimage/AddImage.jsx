@@ -104,6 +104,7 @@ export default function AddImage({ setPictures }) {
 		<Button onClick={ handleUpload }>Submit</Button>
       </Form>
     </Modal>
+	{message && <p>{message}</p>}
     </>
 	)
 }

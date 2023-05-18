@@ -1,6 +1,4 @@
 
-import PictureGalleryCollection from '../slideshow/PictureGalleryCollection.jsx';
-
 export default function Carousel({ pictures, setPictures }) {
    
     //seperate: region and country
