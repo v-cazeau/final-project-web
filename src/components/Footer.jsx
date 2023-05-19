@@ -11,7 +11,6 @@ export default function Footer() {
                     <Col 
                         className = "text-center">
                             <p> &copy;{currentYear} Véronie Cazeau</p>
-                            <br />
                             <a href = {url} 
                                 target ="_blank"
                                 rel = "noreferrer"

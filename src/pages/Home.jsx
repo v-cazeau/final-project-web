@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import AddImage from "../components/addimage/AddImage.jsx"
 import RegionDropList from "../components/homepage/RegionDropList.jsx"
 import SlideShow from "./SlideShow.jsx"
@@ -9,9 +9,6 @@ export default function Home ({ pictures, setPictures }) {
         <>
         <Container>
             <Row >
-                <Col className= "bg-info" >
-                 <h1>Homepage</h1>
-                </Col>
             </Row>
         </Container>
         <RegionDropList pictures = {pictures} setPictures ={setPictures}/>

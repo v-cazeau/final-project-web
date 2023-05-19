@@ -1,8 +1,24 @@
-.App {
-  text-align: center;
-  background-image: url("../components/homepage/bg.webp");
+*, *:after, *:before {
+  margin: 0; 
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.root {
+  min-height: 100vh;
+  background-image: url("../style/images/bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+.App {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: url("../style/images/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 
