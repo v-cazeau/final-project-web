@@ -1,10 +1,10 @@
 .App {
   text-align: center;
+  background-image: url("../components/homepage/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.home {
-  background: url("https://giphy.com/embed/l5JbspfwZ0yjHjlJ0K");
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

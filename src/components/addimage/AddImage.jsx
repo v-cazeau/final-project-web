@@ -37,13 +37,13 @@ export default function AddImage({ setPictures }) {
 			}, 
 			body: JSON.stringify({region, country, image, description, location })
 		})
-		.then(res => res.json())
+		.then(resp => resp.json())
 		.then(data => {
 			if(data.message){
 				alert(data.message)
 				return
 			}
-			// setPictures(data);
+			setPictures(data);
 			setOpenModal(false)
 			setRegion("")
 			setCountry("")

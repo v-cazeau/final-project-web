@@ -1,36 +1,42 @@
 import { useState, useEffect } from 'react';
-import { Form } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 
 
 export default function RegionDropList({ pictures, setPictures }) {
+    const [filterRegion, setFilterRegion] = useState("Americas");
 
-
-    const [ selectedPictures, setSelectedPictures ] = useState([]);
-    const [ selectedRegions, setSelectedRegions ] = useState([]);
-
-    const region =['Americas', 'Eastern Mediterranean', 'Europe', 'Western Pacific', 'South-East Asia', 'Africa']
-
+    const getAllPics = () => { 
+        console.log(filterRegion)
+        // fetch(`http://127.0.0.1:5002/theroses/carousel/${filterRegion}`)
+        fetch(`https://final-project-vc.web.app/theroses/carousel/${filterRegion}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log("pictures are ,",data)
+            setPictures(data)
+        })
+        .catch(alert)
+    }
+    
     useEffect(() => {
-        const collectionByRegion = pictures.filter 
-        (picture => selectedRegions.includes(picture.country) 
-        || selectedRegions.includes(picture.region))
-        setSelectedPictures(collectionByRegion)
-    }, [selectedRegions]);
+    getAllPics()},[filterRegion,setPictures])
+
     
       return(
         <>
-        <Form> 
-            {selectedPictures.map((picture) => (
-            <Form.Group> 
-                <Form.Label>Select Region</Form.Label>
-                <Form.Control as= "select" multiple onChange={(e) => setSelectedRegions(e.target.value)}>
-                    <option key={picture._id} 
-                    value={picture.region}>
-                        {picture.region}</option>
-                </Form.Control>
-            </Form.Group>
-            ))}
-        </Form>
+        <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select Your Region
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu name = "regions">
+                <Dropdown.Item onClick={() => setFilterRegion("Americas")}>Americas</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Europe")}>Europe</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Africa")}>Africa</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Western Pacific")}>Western Pacific</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("South-East Asia")}>South-East Asia</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Eastern Mediterranean")}>Eastern Mediterranean</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>        
         </>
       )
 }

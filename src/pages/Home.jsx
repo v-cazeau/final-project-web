@@ -1,8 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap"
 import AddImage from "../components/addimage/AddImage.jsx"
 import RegionDropList from "../components/homepage/RegionDropList.jsx"
+import SlideShow from "./SlideShow.jsx"
+import Footer from "../components/Footer.jsx"
 
-export default function Home ({ setPictures }) {
+export default function Home ({ pictures, setPictures }) {
     return (
         <>
         <Container>
@@ -12,11 +14,10 @@ export default function Home ({ setPictures }) {
                 </Col>
             </Row>
         </Container>
-        <p>dropup or dropdown menu: region</p>
-        <p>dropup or dropdown menu: country </p>
-        <RegionDropList />
-        <p>upload modal: top right</p>
+        <RegionDropList pictures = {pictures} setPictures ={setPictures}/>
+        <SlideShow pictures = {pictures} setPictures ={setPictures} />
         <AddImage setPictures ={setPictures} />
+        <Footer/>
         </>
     )
 }

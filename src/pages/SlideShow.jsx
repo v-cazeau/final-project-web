@@ -1,23 +1,19 @@
 import { Carousel, Container, Row, Col, Button } from "react-bootstrap";
-import { useEffect } from "react";
 
 export default function SlideShow({ pictures, setPictures }) {
-  useEffect(() => {
-    fetch("https://final-project-vc.web.app/theroses")
-      .then((resp) => resp.json())
-      .then(setPictures)
-      .catch(alert);
-  }, []);
+ 
 
   const handleDelete = (picId) => {
-    fetch(`https://final-project-vc.web.app/theroses/${picId}`, {
+    fetch(`https://final-project-vc.web.app/theroses/carousel/${picId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     })
       .then((resp) => resp.json())
       .then(setPictures)
       .catch(alert);
-  };
+    };
+
+    console.log(pictures)
 
   return (
     <>
