@@ -55,7 +55,7 @@ export default function AddImage({ setPictures }) {
 	
 	return(
     <>
-    <Button onClick= { handleOpen }> Upload Photo </Button>
+    <Button className= "upload-button" onClick= { handleOpen }> Upload Photo </Button>
     <Modal show={ openModal } onHide= { handleClose }  >
     	<Form newClass = "upload-form-modal">
 			<Form.Group>
@@ -101,7 +101,7 @@ export default function AddImage({ setPictures }) {
 				onChange= {e => setLocation(e.target.value)}/>
 			</Form.Group>
 			<br />
-		<Button onClick={ handleUpload }>Submit</Button>
+		<Button className="submit-button" onClick={ handleUpload }>Submit</Button>
       </Form>
     </Modal>
 	{message && <p>{message}</p>}

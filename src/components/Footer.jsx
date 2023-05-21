@@ -1,20 +1,22 @@
-import {  Container, Row, Col } from 'react-bootstrap'
+import {  Container, Row, Col, Footer } from 'react-bootstrap'
 
-export default function Footer() {
+export default function FooterElement() {
      const currentYear = new Date().getFullYear(); 
      const url = 'https://github.com/v-cazeau/final-project-web'
 
     return (
         <footer> 
-            <Container>
+            <Container sticky="bottom" className= "p-5 footer">
                 <Row> 
-                    <Col 
-                        className = "text-center">
-                            <p> &copy;{currentYear} Véronie Cazeau</p>
+                    <Col>
+                    <div 
+                        className = "button-effect">
                             <a href = {url} 
                                 target ="_blank"
                                 rel = "noreferrer"
-                                className = "button-effect">Code in GitHub</a>
+                                >Code in GitHub</a>
+                                <p> &copy;{currentYear} Véronie Cazeau</p>
+                    </div>
                     </Col>
                 </Row>
             </Container>

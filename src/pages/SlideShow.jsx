@@ -17,31 +17,34 @@ export default function SlideShow({ pictures, setPictures }) {
 
   return (
     <>
-      <>Region Collection</>
       <Container>
         <Row>
           <Col>
             {!pictures ? (
               "Loading..."
             ) : (
-              <Carousel>
+              <Carousel className="picture-box">
                 {pictures.map((picture) => (
-                  <Carousel.Item key={picture._id}>
+                  <Carousel.Item key={picture._id} data-interval={4500}>
                     <img
                       className="d-block w-100"
                       src={picture.image}
-                      alt="First slide"
+                      alt=""
                     />
-                    <Carousel.Caption>
-                      <h2>{picture.region}</h2>
-                      <h3>{picture.country}</h3>
-                      <p>Decription: {picture.description}</p>
-                      <p>Location: {picture.location}</p>
-                      <Button onClick={() => handleDelete(pictures._id)}>
+                    <Carousel.Caption >
+                      <div className="text-start">
+                        <h5>{picture.region}</h5>
+                        <h5>{picture.country}</h5>
+                        <p>{picture.description}
+                          <br/>
+                          {picture.location}
+                        </p>
+                      </div>
+                    </Carousel.Caption>
+                      <Button className="delete-button" onClick={() => handleDelete(pictures._id)}>
                         {" "}
                         DELETE{" "}
                       </Button>
-                    </Carousel.Caption>
                   </Carousel.Item>
                 ))}
               </Carousel>

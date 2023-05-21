@@ -1,8 +1,5 @@
-*, *:after, *:before {
-  margin: 0; 
-  padding: 0;
-  box-sizing: inherit;
-}
+
+/* ************************ BACKGROUNDS ************************* */
 
 .root {
   min-height: 100vh;
@@ -11,6 +8,24 @@
   background-repeat: no-repeat;
   text-align: center;
 }
+
+.about-page-bkgd {
+  color: whitesmoke;
+}
+
+
+.picture-box {
+  position: relative;
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+}
+
+.picture-text {
+  position: absolute; 
+  align-items: flex-end;
+  justify-content: left;
+  display: flex;
+}
+
 
 .App {
   min-height: 100vh;
@@ -22,25 +37,99 @@
 }
 
 
+/* ********************** BUTTONS ************************* */
+
+.region-button {
+  background-color: rgba(191, 207, 190, 0.211);
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.welcome-button {
+  background-color: rgb(93, 202, 85);
+  margin-top: 5px;
+}
+
+.about-button {  
+  background-color: rgb(93, 202, 85);
+}
+.about-button:hover {
+
+}
+
+.delete-button {
+  background-color: rgba(191, 207, 190, 0.211);
+  margin-top: 5px; 
+  margin-bottom: 5px;
+}
+
+.upload-button {
+  background-color: rgb(93, 202, 85);
+  margin-bottom: 30px;
+}
+
+.cover-to-about-button {
+  background-color: rgba(191, 207, 190, 0.211);
+  align-items: center;
+  position: static; 
+  top: 50%;
+  left: 50%;
+}
+
+.str-button {
+  background-color: rgba(191, 207, 190, 0.211);
+  padding: 10px;
+}
+
+/* ********************** TEXT ************************* */
+
+.welcome {
+  font-size: clamp(3.2rem, 7vw, 9rem);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(174, 171, 171);
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  align-items: center;
+  position: static;
+  margin-top: 25%;
+}
+
+.about-text {
+  font-size: clamp(3.2rem, 7vw, 9rem);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(174, 171, 171);
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  margin-top: 7%; 
+}
+
+
+
+/* ********************** ABOUT PAGE ************************* */
+
+.about-page-text {
+  background-color: rgba(0, 0, 128, 0.4);
+  border-radius: 2%;
+  padding: 10px;
+}
+
+/*********************** FOOTER **************************/
+
+.footer {
+  padding-top: 50px; 
+}
+
+.button-effect {
+  color: aliceblue; 
+  display: block; 
+  transform: scale(1.0);
+  padding-top: 100px;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

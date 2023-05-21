@@ -24,7 +24,7 @@ export default function RegionDropList({ pictures, setPictures }) {
       return(
         <>
         <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <Dropdown.Toggle className="region-button" variant="success">
                 Select Your Region
             </Dropdown.Toggle>
 
