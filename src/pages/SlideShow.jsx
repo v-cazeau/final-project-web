@@ -40,11 +40,11 @@ export default function SlideShow({ pictures, setPictures }) {
                           {picture.location}
                         </p>
                       </div>
-                    </Carousel.Caption>
                       <Button className="delete-button" onClick={() => handleDelete(pictures._id)}>
                         {" "}
                         DELETE{" "}
                       </Button>
+                    </Carousel.Caption>
                   </Carousel.Item>
                 ))}
               </Carousel>

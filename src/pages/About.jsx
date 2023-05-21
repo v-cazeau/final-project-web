@@ -10,29 +10,34 @@ export default function About() {
         <>
         <Container>
             <Row>
-                <Col className="about-text">
+                <Col className="about-header">
                     <h1> About </h1>
                 </Col>
             </Row>
             <Row className="about-page-bkgd">
                 <Col className= "about-page-text">
-                <p> 
-                The roses is a website that was inspired by nature, the expression “Stop and smell the roses”, and drive toward wellness. The website carousels through nature photos and encourages a mindful moment. On your next walk out side look, stop and smell a rose or two, take a picture and share it with us what rose you witnessed.
-                <br/>
-                <br/>
-                <a href = {url} 
-                target ="_blank"
-                rel = "noreferrer"
-                className = "about-page-button-effect">Nature-based pictures </a> is a proven phenomenon for a good reason. Research has shown that individuals residing near nature experience greater life satisfaction and possess a more optimistic perspective. Merely observing natural surroundings can enhance productivity, concentration, and serve as a buffer against the detrimental impact of stress, anxiety, and depression. The nourishing effect that nature scenes have on our brains, regardless of whether they are real or captured in a photograph. Our brains respond to these stimuli in a similarly revitalizing manner.
-                <br/>
-                <br/>
-                The expression "stop and smell the roses" is like a gentle nudge to slow down, savor life, and appreciate the beauty that exists all around us. It encourages us to take a moment to relax and truly enjoy the present. This phrase emerged in the 1960s, inspired by golfer Walter Hagen's autobiography, where he shared the wisdom of not rushing through life, letting go of worries, and taking the time to appreciate the flowers along our journey. It quickly caught on as a popular way to encapsulate this sentiment of embracing the simple joys in life.
-                </p>
+                <div className= "about-page-text">
+                    <p> 
+                    The Roses is a website that was inspired by nature, feul for travel, the expression “Stop and smell the roses”, and wellness. The website carousels through nature photos and encourages a mindful moment.
+                    <br/>
+                    <br/>
+                    <a href = {url} 
+                    target ="_blank"
+                    rel = "noreferrer"
+                    className = "ap-link">Research </a>  has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, concentration, and protects against stress and anxiety. Whether real or captured in a photograph, nature scenes have a nourishing effect on our brains, revitalizing us in a similar manner.
+                    <br/>
+                    <br/>
+                    "Stop and smell the roses" is a gentle reminder to slow down, savor life, and appreciate the beauty around us. Inspired by golfer Walter Hagen's wisdom, this phrase encapsulates the joy of embracing life's simple pleasures.
+                    <br/>
+                    <br/>
+                    Join us in adding a rose to our collection as we enjoy the beauty of nature, find joy in living in the present moment, and use the website as a tool for relaxation through gazing at captivating pictures. 
+                    </p>
+                </div>
                 </Col>
             </Row>
             <Row>
                 <Col> 
-                <Button className="about-button" onClick={() => navigate('/')}> Back to Welcome Page </Button>
+                <Button className="back-to-welcome" onClick={() => navigate('/')}> Back to Welcome Page </Button>
                 </Col>
             </Row>
         </Container>

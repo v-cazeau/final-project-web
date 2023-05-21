@@ -1,6 +1,5 @@
 
 /* ************************ BACKGROUNDS ************************* */
-
 .root {
   min-height: 100vh;
   background-image: url("../style/images/bg.gif");
@@ -51,11 +50,13 @@
   margin-top: 5px;
 }
 
-.about-button {  
+.back-to-welcome {  
   background-color: rgb(93, 202, 85);
+  margin-top: 20px;
 }
-.about-button:hover {
 
+.back-to-welcome:hover {
+  box-shadow: 300px;
 }
 
 .delete-button {
@@ -67,6 +68,7 @@
 .upload-button {
   background-color: rgb(93, 202, 85);
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .cover-to-about-button {
@@ -80,7 +82,11 @@
 .str-button {
   background-color: rgba(191, 207, 190, 0.211);
   padding: 10px;
+  margin-bottom: 20px;
+  margin-top:5px;
 }
+
+
 
 /* ********************** TEXT ************************* */
 
@@ -88,23 +94,19 @@
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(174, 171, 171);
-  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
   align-items: center;
   position: static;
   margin-top: 25%;
 }
 
-.about-text {
+.about-header {
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(174, 171, 171);
-  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
   margin-top: 7%; 
 }
-
-
-
-/* ********************** ABOUT PAGE ************************* */
 
 .about-page-text {
   background-color: rgba(0, 0, 128, 0.4);
@@ -115,7 +117,8 @@
 /*********************** FOOTER **************************/
 
 .footer {
-  padding-top: 50px; 
+  padding-top: 50px;
+  
 }
 
 .button-effect {
@@ -125,6 +128,10 @@
   padding-top: 100px;
 }
 
+.ap-link {
+  color: rgb(27, 205, 196); 
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
