@@ -24,7 +24,7 @@ export default function About() {
                     <a href = {url} 
                     target ="_blank"
                     rel = "noreferrer"
-                    className = "ap-link">Research</a>  has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, and concentration, and protects against stress and anxiety. Whether natural or captured in a photograph, nature scenes have a nourishing effect on our brains, similarly revitalizing us.
+                    className = "ap-link">Research</a>   has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, and concentration, and protects against stress and anxiety. Whether natural or captured in a photograph, nature scenes have a nourishing effect on our brains, similarly revitalizing us.
                     <br/>
                     <br/>
                     "Stop and smell the roses" is a gentle reminder to slow down, savor life, and appreciate the beauty around us. Inspired by golfer Walter Hagen's wisdom, this phrase encapsulates the joy of embracing life's simple pleasures.

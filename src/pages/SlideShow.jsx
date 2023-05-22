@@ -1,8 +1,6 @@
 import { Carousel, Container, Row, Col, Button } from "react-bootstrap";
 
 export default function SlideShow({ pictures, setPictures }) {
- 
-
   const handleDelete = (picId) => {
     fetch(`https://final-project-vc.web.app/theroses/${picId}`, {
       method: "DELETE",
@@ -11,9 +9,9 @@ export default function SlideShow({ pictures, setPictures }) {
       .then((resp) => resp.json())
       .then(setPictures)
       .catch(alert);
-    };
+  };
 
-    console.log(pictures)
+  console.log(pictures);
 
   return (
     <>
@@ -24,29 +22,36 @@ export default function SlideShow({ pictures, setPictures }) {
               "Loading..."
             ) : (
               <Carousel className="picture-box">
-                {pictures.map((picture) => (
-                  <Carousel.Item key={picture._id} data-interval={4500}>
-                    <img
-                      className="d-block w-100"
-                      src={picture.image}
-                      alt=""
-                    />
-                    <Carousel.Caption >
-                      <div className="text-start">
-                        <h5>{picture.region}</h5>
-                        <h5>{picture.country}</h5>
-                        <p>{picture.description}
-                          <br/>
-                          {picture.location}
-                        </p>
-                      </div>
-                      <Button className="delete-button" onClick={() => handleDelete(pictures._id)}>
-                        {" "}
-                        DELETE{" "}
-                      </Button>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                ))}
+                {pictures.map((picture) => {
+                  const thisId = picture._id
+                  return (
+                    <Carousel.Item key={picture._id} data-interval={4500}>
+                      <img
+                        className="d-block w-100"
+                        src={picture.image}
+                        alt=""
+                      />
+                      <Carousel.Caption>
+                        <div className="caption">
+                          <h5 className="caption">{picture.region}</h5>
+                          <h5>{picture.country}</h5>
+                          <p>
+                            {picture.description}
+                            <br />
+                            {picture.location}
+                          </p>
+                        </div>
+                        {/* <Button className="delete-button" onClick={() => handleDelete(pictures._id)}> */}
+                        <Button
+                          className="delete-button"
+                          onClick={() => handleDelete(thisId)}
+                        >
+                          DELETE
+                        </Button>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  );
+                })}
               </Carousel>
             )}
           </Col>

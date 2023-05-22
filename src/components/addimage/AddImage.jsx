@@ -43,7 +43,7 @@ export default function AddImage({ setPictures }) {
 				alert(data.message)
 				return
 			}
-			setPictures(data);
+			setPictures(data); 
 			setOpenModal(false);
 			setRegion("");
 			setCountry("");
@@ -104,7 +104,7 @@ export default function AddImage({ setPictures }) {
 		<Button className="submit-button" onClick={ handleUpload }>Submit</Button>
       </Form>
     </Modal>
-	{message && <p>{message}</p>}
+	{message && <p className="message">{message}</p>}
     </>
 	)
 }

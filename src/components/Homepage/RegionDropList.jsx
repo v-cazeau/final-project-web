@@ -8,7 +8,7 @@ export default function RegionDropList({ pictures, setPictures }) {
     const getAllPics = () => { 
         console.log(filterRegion)
         fetch(`https://final-project-vc.web.app/theroses/carousel/${filterRegion}`)
-        .then(response => response.json())
+        .then(resp => resp.json())
         .then(data => {
             console.log("pictures are ,",data)
             setPictures(data)

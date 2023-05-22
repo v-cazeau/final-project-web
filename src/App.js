@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/App.css';
 
 function App() {
-  const [ pictures, setPictures ] = useState([]);
+  const [ pictures, setPictures ] = useState('');
 
   return (
     
