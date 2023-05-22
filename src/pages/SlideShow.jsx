@@ -1,8 +1,8 @@
 import { Carousel, Container, Row, Col, Button } from "react-bootstrap";
 
-export default function SlideShow({ pictures, setPictures }) {
+export default function SlideShow({ filterRegion, pictures, setPictures }) {
   const handleDelete = (picId) => {
-    fetch(`https://final-project-vc.web.app/theroses/${picId}`, {
+    fetch(`https://final-project-vc.web.app/theroses/${filterRegion}/${picId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     })
@@ -32,14 +32,16 @@ export default function SlideShow({ pictures, setPictures }) {
                         alt=""
                       />
                       <Carousel.Caption>
-                        <div className="caption">
-                          <h5 className="caption">{picture.region}</h5>
+                        <div className="text- start">
+                          <div className="caption">
+                          <h5>{picture.region}</h5>
                           <h5>{picture.country}</h5>
                           <p>
                             {picture.description}
                             <br />
                             {picture.location}
                           </p>
+                          </div>
                         </div>
                         {/* <Button className="delete-button" onClick={() => handleDelete(pictures._id)}> */}
                         <Button

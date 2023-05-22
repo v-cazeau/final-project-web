@@ -123,17 +123,34 @@
   font-size: larger;
 }
 
-.caption {
-  font-size: xx-large ;
-}
-
 .message {
   font-size: 26px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(174, 171, 171);
-  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
+  color: rgb(214, 88, 81);
+  background-color: rgba(240, 248, 255, 0.599);
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
   align-items: center;
   position: static;
+}
+
+/* .text-start {
+  position: relative;
+  display:inline-block;
+} */
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  align-items: left;
+  flex-direction: column;
+  font-size: small;
+  background-color: rgba(128, 128, 128, 0.485);
+  border-radius: 10%;
+  
 }
 
 /*********************** FOOTER **************************/

@@ -1,7 +1,7 @@
 import { useState } from 'react'; 
 import { Button, Form, Modal } from 'react-bootstrap';
 
-export default function AddImage({ setPictures }) {
+export default function AddImage({ setPictures, filterRegion }) {
 	const [ region, setRegion ] = useState(""); //search/filter dropdown needed
   	const [ country, setCountry ] = useState(""); // search/filter dropdown needed
 	const [ image, setImage ] = useState(""); 
@@ -30,7 +30,7 @@ export default function AddImage({ setPictures }) {
   
   const handleUpload = (e) => {
 	  e.preventDefault()
-	  fetch(`https://final-project-vc.web.app/theroses/upload`,{
+	  fetch(`https://final-project-vc.web.app/theroses/${filterRegion}/upload`,{
 		  method: "POST",
 		  headers: {
 			  "Content-Type": "application/json",

@@ -4,8 +4,10 @@ import RegionDropList from "../components/homepage/RegionDropList.jsx"
 import { useNavigate } from "react-router-dom"
 import SlideShow from "./SlideShow.jsx"
 import FooterElement from "../components/Footer.jsx"
+import { useState } from "react"
 
 export default function Home ({ pictures, setPictures }) {
+    const [filterRegion, setFilterRegion] = useState("Americas");
 
     const navigate = useNavigate()
 
@@ -18,9 +20,9 @@ export default function Home ({ pictures, setPictures }) {
                 </Col>
             </Row>
         </Container>
-        <RegionDropList pictures = {pictures} setPictures ={setPictures}/>
-        <SlideShow pictures = {pictures} setPictures ={setPictures} />
-        <AddImage setPictures ={setPictures} />
+        <RegionDropList filterRegion = {filterRegion} setFilterRegion = {setFilterRegion} pictures = {pictures} setPictures = {setPictures}/>
+        <SlideShow filterRegion = {filterRegion} pictures = {pictures} setPictures ={setPictures} />
+        <AddImage setPictures ={setPictures} filterRegion = {filterRegion} />
         <FooterElement/>
         </>
     )

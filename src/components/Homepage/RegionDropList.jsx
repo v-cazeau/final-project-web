@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { Dropdown } from 'react-bootstrap';
 
 
-export default function RegionDropList({ pictures, setPictures }) {
-    const [filterRegion, setFilterRegion] = useState("Americas");
+export default function RegionDropList({ filterRegion, setFilterRegion, pictures, setPictures }) {
 
     const getAllPics = () => { 
         console.log(filterRegion)
