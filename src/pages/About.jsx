@@ -18,19 +18,19 @@ export default function About() {
                 <Col className= "about-page-text">
                 <div className= "about-page-text">
                     <p> 
-                    The Roses is a website that was inspired by nature, feul for travel, the expression “Stop and smell the roses”, and wellness. The website carousels through nature photos and encourages a mindful moment.
+                    Anne's Roses is a website inspired by nature, fuel for travel, the expression “Stop and smell the roses,” and wellness. The website carousels through nature photos and encourages a mindful moment.
                     <br/>
                     <br/>
                     <a href = {url} 
                     target ="_blank"
                     rel = "noreferrer"
-                    className = "ap-link">Research </a>  has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, concentration, and protects against stress and anxiety. Whether real or captured in a photograph, nature scenes have a nourishing effect on our brains, revitalizing us in a similar manner.
+                    className = "ap-link">Research</a>  has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, and concentration, and protects against stress and anxiety. Whether natural or captured in a photograph, nature scenes have a nourishing effect on our brains, similarly revitalizing us.
                     <br/>
                     <br/>
                     "Stop and smell the roses" is a gentle reminder to slow down, savor life, and appreciate the beauty around us. Inspired by golfer Walter Hagen's wisdom, this phrase encapsulates the joy of embracing life's simple pleasures.
                     <br/>
                     <br/>
-                    Join us in adding a rose to our collection as we enjoy the beauty of nature, find joy in living in the present moment, and use the website as a tool for relaxation through gazing at captivating pictures. 
+                    Add a rose to the collection, enjoy the beauty of nature, find joy in living in the present moment, and use the website as a tool for relaxation, gazing at captivating pictures, and adding to virtual travels.
                     </p>
                 </div>
                 </Col>

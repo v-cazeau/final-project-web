@@ -10,8 +10,9 @@ export default function Coverpage() {
         <>
         <Container>
             <Row> 
-                <Col> 
-                <h1 className="welcome"> Welcome </h1>
+                <Col>
+                <h1 className="annie-header"> Anne's Roses </h1>
+                <p className="annie-subtext"> A place to stop and smell the roses. </p>
                 </Col>
             </Row>
             <Row>

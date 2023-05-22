@@ -4,7 +4,7 @@ export default function SlideShow({ pictures, setPictures }) {
  
 
   const handleDelete = (picId) => {
-    fetch(`https://final-project-vc.web.app/theroses/carousel/${picId}`, {
+    fetch(`https://final-project-vc.web.app/theroses/${picId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     })

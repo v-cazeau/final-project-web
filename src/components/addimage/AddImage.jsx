@@ -44,12 +44,12 @@ export default function AddImage({ setPictures }) {
 				return
 			}
 			setPictures(data);
-			setOpenModal(false)
-			setRegion("")
-			setCountry("")
-			setDescription("")
-			setLocation("")
-			setMessage(`A Rose has been added to the World.`)
+			setOpenModal(false);
+			setRegion("");
+			setCountry("");
+			setDescription("");
+			setLocation("");
+			setMessage(`A Rose has been added to the World.`);
 		})
 	}
 	
