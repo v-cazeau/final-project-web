@@ -49,7 +49,7 @@ export default function AddImage({ setPictures, filterRegion }) {
 			setCountry("");
 			setDescription("");
 			setLocation("");
-			setMessage(`A Rose has been added to the World.`);
+			setMessage(`🌹 A Rose has been added to the World 🌹`);
 		})
 	}
 	
@@ -57,7 +57,8 @@ export default function AddImage({ setPictures, filterRegion }) {
     <>
     <Button className= "upload-button" onClick= { handleOpen }> Upload Photo </Button>
     <Modal show={ openModal } onHide= { handleClose }  >
-    	<Form newClass = "upload-form-modal">
+    	<Form className = "upload-form-modal">
+			<div className = "upload-text">
 			<Form.Group>
 				<Form.Label>Region: </Form.Label>
 				<Form.Control
@@ -101,7 +102,8 @@ export default function AddImage({ setPictures, filterRegion }) {
 				onChange= {e => setLocation(e.target.value)}/>
 			</Form.Group>
 			<br />
-		<Button className="submit-button" onClick={ handleUpload }>Submit</Button>
+			</div>
+		<Button className="add-button" onClick={ handleUpload }> Add Photo </Button>
       </Form>
     </Modal>
 	{message && <p className="message">{message}</p>}

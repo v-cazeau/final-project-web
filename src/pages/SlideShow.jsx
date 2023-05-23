@@ -43,7 +43,6 @@ export default function SlideShow({ filterRegion, pictures, setPictures }) {
                           </p>
                           </div>
                         </div>
-                        {/* <Button className="delete-button" onClick={() => handleDelete(pictures._id)}> */}
                         <Button
                           className="delete-button"
                           onClick={() => handleDelete(thisId)}
