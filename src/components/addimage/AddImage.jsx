@@ -49,7 +49,7 @@ export default function AddImage({ setPictures, filterRegion }) {
 			setCountry("");
 			setDescription("");
 			setLocation("");
-			setMessage(`🌹 A Rose has been added to the World 🌹`);
+			setMessage(`🌍 New addition to the Wonderlust gallery! 🌏`);
 		})
 	}
 	

@@ -55,8 +55,8 @@
   font-family: 'Alegreya';
 }
 
-.region-button:hover{
-
+.region-button:hover {
+  background-color: rgba(85, 191, 77, 0.211);
 }
 
 .welcome-button {
@@ -66,13 +66,13 @@
   font-family: 'Alegreya';
 }
 
-.welcome-button:hover{
-
+.welcome-button:hover {
+  background-color: rgba(85, 191, 77, 0.211);
 }
 
 .back-to-welcome {  
   font-size: 20px;
-  background-color: rgba(53, 199, 43, 0.706);
+  background-color: rgba(93, 202, 85, 0.341);
   margin-top: 20px;
   font-family: 'Alegreya';
 }
@@ -80,6 +80,7 @@
 .back-to-welcome:hover {
   box-shadow: 300px;
   font-family: 'Alegreya';
+  background-color: rgba(85, 191, 77, 0.211);
 }
 
 .delete-button {
@@ -90,21 +91,25 @@
   font-family: 'Alegreya';
 }
 
-.delete-button:hover{
-  
+.delete-button:hover {
+  background-color: rgba(30, 30, 164, 0.855);
 }
 
 .upload-button {
   font-size: 20px;
-  background-color: rgba(53, 199, 43, 0.706);
+  background-color: rgba(93, 202, 85, 0.341);
   margin-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: 'Alegreya';
+}
+
+.upload-button:hover {
+  background-color: rgba(85, 191, 77, 0.211);
 }
 
 .cover-to-about-button {
   font-size: 20px;
-  background-color: rgba(191, 207, 190, 0.211);
+  background-color: rgba(85, 191, 77, 0.211);
   align-items: center;
   position: static; 
   top: 50%;
@@ -113,12 +118,12 @@
 }
 
 .cover-to-about-button:hover {
-
+  background-color:rgba(71, 181, 24, 0.675)
 }
 
 .str-button {
   font-size: 20px;
-  background-color: rgba(191, 207, 190, 0.211);
+  background-color: rgba(85, 191, 77, 0.211);
   padding: 10px;
   margin-bottom: 20px;
   margin-top:5px;
@@ -126,13 +131,17 @@
 }
 
 .str-button:hover {
-  background-color:rgba(220, 40, 31, 0.675)
+  background-color:rgba(71, 181, 24, 0.675)
 }
 
 .add-button {
   font-family: 'Alegreya';
   background-color:rgba(30, 30, 164, 0.855);
   align-content: center;  
+}
+
+.add-button:hover {
+  background-color: rgb(36, 88, 183);
 }
 
 /* ********************** UPLOAD FORM ************************* */
@@ -148,7 +157,7 @@
 
 /* ********************** TEXT ************************* */
 
-.annie-header {
+.wonderlust-header {
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family:'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 800;
@@ -159,7 +168,7 @@
   margin-top: 25%;
 }
 
-.annie-subtext {
+.wonderlust-subtext {
   font-size: 26px;
   font-family:'Cinzel','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
@@ -173,18 +182,17 @@
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family: 'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bolder;
-  color: rgb(174, 171, 171);
+  color: rgb(237, 246, 240);
   filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
   margin-top: 7%; 
 }
 
 .about-page-text {
-  background-color: rgba(0, 0, 128, 0.164);
-
+  background-color: rgba(6, 6, 189, 0.077);
   border-radius: 2%;
   padding: 10px;
   font-size: clamp(1.3rem, 4vw, 1.9rem);
-  font-family: 'Alegreya','Cinzel','Josefin Sans', sans-serif;
+  font-family:'sans-serif','Lucida Sans Unicode';
   font-weight: 300;
 }
 
@@ -192,7 +200,7 @@
   font-size: 26px;
   font-family:'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 700;
-  color: rgb(220, 40, 31);
+  color: rgba(30, 30, 164, 0.855);
   background-color: rgba(240, 248, 255, 0.686);
   filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
   align-items: center;

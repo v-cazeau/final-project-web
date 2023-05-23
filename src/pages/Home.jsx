@@ -15,7 +15,7 @@ export default function Home ({ pictures, setPictures }) {
         <Container>
             <Row>
                 <Col>
-                <Button className="welcome-button" onClick={() => navigate('/')}>Back to Welcome</Button>
+                <Button className="welcome-button" onClick={() => navigate('/')}>Back to Welcome Page</Button>
                 </Col>
             </Row>
         </Container>

@@ -14,13 +14,13 @@ export default function Coverpage() {
         <Container>
             <Row> 
                 <Col>
-                <h1 className="annie-header">Wonderlust </h1>
-                <p className="annie-subtext">Capturing the world's wonders, one frame at a time. </p>
+                <h1 className="wonderlust-header"> Wonderlust </h1>
+                <p className="wonderlust-subtext">Capturing the world's wonders, one frame at a time. </p>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                <Button className="str-button" onClick={() => navigate('/theroses')}>Smell the Roses</Button>
+                <Button className="str-button" onClick={() => navigate('/theroses')}>World Wonders</Button>
                 </Col>
             </Row>
             <Row>
