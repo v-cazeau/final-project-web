@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*, *::before, *::after { margin: 0; padding: 0; }
+
 .picture-box {
   position: relative;
-  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245));
+}
+
+.picture-box img {
+  border-radius: 10px;
 }
 
 .picture-text {
@@ -13,7 +19,6 @@
   justify-content: left;
   display: flex;
 }
-
 
 /* ************************ BACKGROUNDS ************************* */
 .root {
@@ -27,7 +32,7 @@
 .App {
   min-height: 100vh;
   min-width: 100vh;
-  background-image: url("../style/images/bg.webp");
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -42,6 +47,7 @@
 /* ********************** BUTTONS ************************* */
 
 .region-button {
+  font-size: 20px;
   background-color: rgba(191, 207, 190, 0.211);
   padding: 10px;
   margin-top: 15px;
@@ -49,14 +55,24 @@
   font-family: 'Alegreya';
 }
 
+.region-button:hover{
+
+}
+
 .welcome-button {
-  background-color: rgba(93, 202, 85, 0.536);
+  font-size: 20px;
+  background-color: rgba(93, 202, 85, 0.341);
   margin-top: 5px;
   font-family: 'Alegreya';
 }
 
+.welcome-button:hover{
+
+}
+
 .back-to-welcome {  
-  background-color: rgba(93, 202, 85, 0.536);
+  font-size: 20px;
+  background-color: rgba(53, 199, 43, 0.706);
   margin-top: 20px;
   font-family: 'Alegreya';
 }
@@ -67,20 +83,27 @@
 }
 
 .delete-button {
+  font-size: 20px;
   background-color: rgba(191, 207, 190, 0.211);
   margin-top: 5px; 
   margin-bottom: 5px;
   font-family: 'Alegreya';
 }
 
+.delete-button:hover{
+  
+}
+
 .upload-button {
-  background-color: rgba(93, 202, 85, 0.536);
+  font-size: 20px;
+  background-color: rgba(53, 199, 43, 0.706);
   margin-bottom: 30px;
   margin-top: 20px;
   font-family: 'Alegreya';
 }
 
 .cover-to-about-button {
+  font-size: 20px;
   background-color: rgba(191, 207, 190, 0.211);
   align-items: center;
   position: static; 
@@ -89,12 +112,21 @@
   font-family: 'Alegreya';
 }
 
+.cover-to-about-button:hover {
+
+}
+
 .str-button {
+  font-size: 20px;
   background-color: rgba(191, 207, 190, 0.211);
   padding: 10px;
   margin-bottom: 20px;
   margin-top:5px;
   font-family: 'Alegreya';
+}
+
+.str-button:hover {
+  background-color:rgba(220, 40, 31, 0.675)
 }
 
 .add-button {
@@ -120,8 +152,8 @@
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family:'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 800;
-  color: rgb(174, 171, 171);
-  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
+  color: rgb(197, 226, 205);
+  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46)); 
   align-items: center;
   position: static;
   margin-top: 25%;
@@ -131,8 +163,8 @@
   font-size: 26px;
   font-family:'Cinzel','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
-  color: rgb(174, 171, 171);
-  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
+  color: rgb(237, 246, 240);
+  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46)); 
   align-items: center;
   position: static;
 }
@@ -140,19 +172,20 @@
 .about-header {
   font-size: clamp(3.2rem, 7vw, 9rem);
   font-family: 'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
   color: rgb(174, 171, 171);
   filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
   margin-top: 7%; 
 }
 
 .about-page-text {
-  background-color: rgba(0, 0, 128, 0.4);
+  background-color: rgba(0, 0, 128, 0.164);
+
   border-radius: 2%;
   padding: 10px;
-  font-size: larger;
-  font-family: 'Cinzel','Josefin Sans', sans-serif;
-  font-weight: 400;
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
+  font-family: 'Alegreya','Cinzel','Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 
 .message {
@@ -189,19 +222,35 @@
 
 /*********************** FOOTER **************************/
 
-.footer {
-  padding-top: 50px;
+.footer-v {
+  font-family: 'Alegreya';
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .button-effect {
   color: aliceblue; 
   display: block; 
   transform: scale(1.0);
-  padding-top: 100px;
+}
+
+.button-effect:hover {
+  transform: scale(1.23);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.761));
+}
+
+.gh-link {
+  color: aliceblue; 
+}
+
+.footer-name {
+  font-size: large;
+  color: aliceblue; 
 }
 
 .ap-link {
-  color: rgba(24, 253, 8, 0.536); 
+  color: rgba(29, 235, 14, 0.869); 
+  font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {

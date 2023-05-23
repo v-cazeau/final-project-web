@@ -6,17 +6,17 @@ export default function FooterElement() {
 
     return (
         <footer> 
-            <Container sticky="bottom" className= "p-5 footer">
+            <Container className= "footer-v">
                 <Row> 
                     <Col>
-                    <div 
-                        className = "button-effect">
+                        <div className='button-effect'> 
                             <a href = {url} 
-                                target ="_blank"
-                                rel = "noreferrer"
-                                >Code in GitHub</a>
-                                <p> &copy;{currentYear} Véronie Cazeau</p>
-                    </div>
+                            target ="_blank"
+                            rel = "noreferrer"
+                            className='gh-link'
+                            >Code in GitHub</a>
+                            <p className='footer-name' > &copy;{currentYear} Véronie Cazeau</p>
+                        </div>
                     </Col>
                 </Row>
             </Container>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Container, Row, Col } from "react-bootstrap";
-import FooterElement from "../components/Footer.jsx";
+
 
 export default function About() {
     const navigate = useNavigate()
@@ -11,28 +11,12 @@ export default function About() {
         <Container>
             <Row>
                 <Col className="about-header">
-                    <h1> About </h1>
+                    <h1>About</h1>
                 </Col>
             </Row>
             <Row className="about-page-bkgd">
-                <Col className= "about-page-text">
-                <div className= "about-page-text">
-                    <p> 
-                    Anne's Roses is a website inspired by nature, fuel for travel, the expression “Stop and smell the roses,” and wellness. The website carousels through nature photos and encourages a mindful moment.
-                    <br/>
-                    <br/>
-                    <a href = {url} 
-                    target ="_blank"
-                    rel = "noreferrer"
-                    className = "ap-link">Research</a>   has shown that being near nature enhances life satisfaction and fosters optimism. Simply immersing ourselves in natural surroundings improves productivity, and concentration, and protects against stress and anxiety. Whether natural or captured in a photograph, nature scenes have a nourishing effect on our brains, similarly revitalizing us.
-                    <br/>
-                    <br/>
-                    "Stop and smell the roses" is a gentle reminder to slow down, savor life, and appreciate the beauty around us. Inspired by golfer Walter Hagen's wisdom, this phrase encapsulates the joy of embracing life's simple pleasures.
-                    <br/>
-                    <br/>
-                    Add a rose to the collection, enjoy the beauty of nature, find joy in living in the present moment, and use the website as a tool for relaxation, gazing at captivating pictures, and adding to virtual travels.
-                    </p>
-                </div>
+                <Col sm={11} className= "about-page-text">
+                    <p>Wonderlust is a captivating online platform that embraces the essence of adventure and discovery, offering a visual feast for the travel-hungry souls. With a mission to capture the world's wonders, one frame at a time, Wonderlust showcases breathtaking photographs from around the globe that transport viewers to awe-inspiring destinations. From serene sunsets painting the skies with vibrant hues over pristine beaches, to towering mountains piercing through the clouds in a majestic display of nature's grandeur, every frame captures the essence of Wonderlust. Immerse yourself in the enchanting visuals, igniting a deep longing to explore and uncover the hidden treasures that await in the far corners of our planet. Wonderlust beckons the dreamers, the adventurers, and the curious at heart to embark on their own journeys and create unforgettable memories, one click at a time.</p>
                 </Col>
             </Row>
             <Row>
@@ -41,7 +25,6 @@ export default function About() {
                 </Col>
             </Row>
         </Container>
-        <FooterElement/>
         </>
     )
 }

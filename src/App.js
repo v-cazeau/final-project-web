@@ -4,6 +4,7 @@ import Home  from './pages/Home.jsx';
 import SlideShow from './pages/SlideShow.jsx'; 
 import Coverpage from './pages/Coverpage.jsx';
 import About from './pages/About.jsx'
+import FooterElement from './components/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/App.css';
 
@@ -13,7 +14,6 @@ function App() {
   return (
     
     <div className="App">
-     <>
      <BrowserRouter>
       <Routes>
         <Route path= "/" element={<Coverpage/>}/>
@@ -22,7 +22,7 @@ function App() {
         <Route path= "/theroses/carousel" element={<SlideShow pictures = {pictures} setPictures ={setPictures} />}/>
       </Routes>
      </BrowserRouter>
-     </>
+     <FooterElement/>
     </div>
   );
 }

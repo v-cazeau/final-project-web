@@ -3,7 +3,6 @@ import AddImage from "../components/addimage/AddImage.jsx"
 import RegionDropList from "../components/homepage/RegionDropList.jsx"
 import { useNavigate } from "react-router-dom"
 import SlideShow from "./SlideShow.jsx"
-import FooterElement from "../components/Footer.jsx"
 import { useState } from "react"
 
 export default function Home ({ pictures, setPictures }) {
@@ -23,7 +22,6 @@ export default function Home ({ pictures, setPictures }) {
         <RegionDropList filterRegion = {filterRegion} setFilterRegion = {setFilterRegion} pictures = {pictures} setPictures = {setPictures}/>
         <SlideShow filterRegion = {filterRegion} pictures = {pictures} setPictures ={setPictures} />
         <AddImage setPictures ={setPictures} filterRegion = {filterRegion} />
-        <FooterElement/>
         </>
     )
 }

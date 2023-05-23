@@ -29,10 +29,10 @@ export default function RegionDropList({ filterRegion, setFilterRegion, pictures
             <Dropdown.Menu name = "regions">
                 <Dropdown.Item onClick={() => setFilterRegion("Americas")}>Americas</Dropdown.Item>
                 <Dropdown.Item onClick={() => setFilterRegion("Europe")}>Europe</Dropdown.Item>
-                <Dropdown.Item onClick={() => setFilterRegion("Africa")}>Africa</Dropdown.Item>
-                <Dropdown.Item onClick={() => setFilterRegion("Western Pacific")}>Western Pacific</Dropdown.Item>
-                <Dropdown.Item onClick={() => setFilterRegion("South-East Asia")}>South-East Asia</Dropdown.Item>
-                <Dropdown.Item onClick={() => setFilterRegion("Eastern Mediterranean")}>Eastern Mediterranean</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Africa")} disabled={true} >Africa</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Western Pacific")} disabled={true} >Western Pacific</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("South-East Asia")} disabled={true} >South-East Asia</Dropdown.Item>
+                <Dropdown.Item onClick={() => setFilterRegion("Eastern Mediterranean")} disabled={true} >Eastern Mediterranean</Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>        
         </>

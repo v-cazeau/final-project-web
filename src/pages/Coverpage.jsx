@@ -1,9 +1,12 @@
 import { Button, Container, Row, Col } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
-import FooterElement from "../components/Footer.jsx"
+
 
 export default function Coverpage() {
     const navigate = useNavigate()
+    const currentYear = new Date().getFullYear(); 
+    const url = 'https://github.com/v-cazeau/final-project-web'
+
 
     return(
         <div className="root">
@@ -11,8 +14,8 @@ export default function Coverpage() {
         <Container>
             <Row> 
                 <Col>
-                <h1 className="annie-header"> Anne's Roses </h1>
-                <p className="annie-subtext"> A place to stop and smell the roses. </p>
+                <h1 className="annie-header">Wonderlust </h1>
+                <p className="annie-subtext">Capturing the world's wonders, one frame at a time. </p>
                 </Col>
             </Row>
             <Row>
@@ -26,7 +29,6 @@ export default function Coverpage() {
             </Col>
             </Row>
         </Container>
-        <FooterElement/>
         </>
         </div>
     )
