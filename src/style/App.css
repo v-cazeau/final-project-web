@@ -243,8 +243,18 @@
 }
 
 .button-effect:hover {
-  transform: scale(1.23);
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.761));
+  color: aliceblue;
+  text-decoration: aliceblue;
+  /* transform: scale(1.23);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.761)); */
+}
+
+.a:link, a:visited {
+  color: aliceblue; 
+}
+
+a:hover { 
+  color: aliceblue;
 }
 
 .gh-link {
