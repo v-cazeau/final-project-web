@@ -14,7 +14,7 @@ export default function SlideShow({ filterRegion, pictures, setPictures }) {
   console.log(pictures);
 
   return (
-    <>
+    <section>
       <Container>
         <Row>
           <Col>
@@ -58,6 +58,6 @@ export default function SlideShow({ filterRegion, pictures, setPictures }) {
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 }

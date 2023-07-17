@@ -23,6 +23,7 @@
 /* ************************ BACKGROUNDS ************************* */
 .root {
   min-height: 100vh;
+  min-width: 10vw;
   background-image: url("../style/images/bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,8 +31,8 @@
 }
 
 .App {
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: 10vh;
+  min-width: 10vh;
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -271,17 +272,3 @@ a:hover {
   font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

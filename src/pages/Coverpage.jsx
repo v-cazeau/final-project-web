@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom"
 
 export default function Coverpage() {
     const navigate = useNavigate()
-    const currentYear = new Date().getFullYear(); 
-    const url = 'https://github.com/v-cazeau/final-project-web'
 
 
     return(

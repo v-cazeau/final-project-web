@@ -11,7 +11,7 @@ export default function Home ({ pictures, setPictures }) {
     const navigate = useNavigate()
 
     return (
-        <>
+        <section>
         <Container>
             <Row>
                 <Col>
@@ -22,6 +22,6 @@ export default function Home ({ pictures, setPictures }) {
         <RegionDropList filterRegion = {filterRegion} setFilterRegion = {setFilterRegion} pictures = {pictures} setPictures = {setPictures}/>
         <SlideShow filterRegion = {filterRegion} pictures = {pictures} setPictures ={setPictures} />
         <AddImage setPictures ={setPictures} filterRegion = {filterRegion} />
-        </>
+        </section>
     )
 }
