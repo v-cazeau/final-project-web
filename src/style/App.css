@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*, *::before, *::after { margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 
 .picture-box {
   position: relative;
@@ -14,7 +19,7 @@
 }
 
 .picture-text {
-  position: absolute; 
+  position: absolute;
   align-items: flex-end;
   justify-content: left;
   display: flex;
@@ -23,7 +28,7 @@
 /* ************************ BACKGROUNDS ************************* */
 .root {
   min-height: 100vh;
-  min-width: 10vw;
+  min-width: 100vw;
   background-image: url("../style/images/bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +36,7 @@
 }
 
 .App {
-  min-height: 10vh;
+  min-height: 100vh;
   min-width: 10vh;
   background-color: black;
   background-size: cover;
@@ -43,8 +48,6 @@
   color: whitesmoke;
 }
 
-
-
 /* ********************** BUTTONS ************************* */
 
 .region-button {
@@ -52,8 +55,8 @@
   background-color: rgba(191, 207, 190, 0.211);
   padding: 10px;
   margin-top: 15px;
-  margin-bottom: 5px;
-  font-family: 'Alegreya';
+  margin-bottom: 20px;
+  font-family: "Alegreya";
 }
 
 .region-button:hover {
@@ -63,33 +66,34 @@
 .welcome-button {
   font-size: 20px;
   background-color: rgba(93, 202, 85, 0.341);
-  margin-top: 5px;
-  font-family: 'Alegreya';
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Alegreya";
 }
 
 .welcome-button:hover {
   background-color: rgba(85, 191, 77, 0.211);
 }
 
-.back-to-welcome {  
+.back-to-welcome {
   font-size: 20px;
   background-color: rgba(93, 202, 85, 0.341);
   margin-top: 20px;
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
 }
 
 .back-to-welcome:hover {
   box-shadow: 300px;
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
   background-color: rgba(85, 191, 77, 0.211);
 }
 
 .delete-button {
   font-size: 20px;
   background-color: rgba(191, 207, 190, 0.211);
-  margin-top: 5px; 
+  margin-top: 5px;
   margin-bottom: 5px;
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
 }
 
 .delete-button:hover {
@@ -101,7 +105,7 @@
   background-color: rgba(93, 202, 85, 0.341);
   margin-bottom: 30px;
   margin-top: 40px;
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
 }
 
 .upload-button:hover {
@@ -112,14 +116,14 @@
   font-size: 20px;
   background-color: rgba(85, 191, 77, 0.211);
   align-items: center;
-  position: static; 
+  position: static;
   top: 50%;
   left: 50%;
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
 }
 
 .cover-to-about-button:hover {
-  background-color:rgba(71, 181, 24, 0.675)
+  background-color: rgba(71, 181, 24, 0.675);
 }
 
 .str-button {
@@ -127,18 +131,18 @@
   background-color: rgba(85, 191, 77, 0.211);
   padding: 10px;
   margin-bottom: 20px;
-  margin-top:5px;
-  font-family: 'Alegreya';
+  margin-top: 5px;
+  font-family: "Alegreya";
 }
 
 .str-button:hover {
-  background-color:rgba(71, 181, 24, 0.675)
+  background-color: rgba(71, 181, 24, 0.675);
 }
 
 .add-button {
-  font-family: 'Alegreya';
-  background-color:rgba(30, 30, 164, 0.855);
-  align-content: center;  
+  font-family: "Alegreya";
+  background-color: rgba(30, 30, 164, 0.855);
+  align-content: center;
 }
 
 .add-button:hover {
@@ -147,12 +151,12 @@
 
 /* ********************** UPLOAD FORM ************************* */
 .upload-form-modal {
- padding: 10px;
- background-color: rgba(64, 123, 60, 0.25);
+  padding: 10px;
+  background-color: rgba(64, 123, 60, 0.25);
 }
 
 .upload-text {
-  font-family:'Alegreya';
+  font-family: "Alegreya";
   font: bold;
 }
 
@@ -160,10 +164,11 @@
 
 .wonderlust-header {
   font-size: clamp(3.2rem, 7vw, 9rem);
-  font-family:'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Cinzel", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 800;
   color: rgb(197, 226, 205);
-  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46)); 
+  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46));
   align-items: center;
   position: static;
   margin-top: 25%;
@@ -171,21 +176,23 @@
 
 .wonderlust-subtext {
   font-size: 26px;
-  font-family:'Cinzel','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Cinzel", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   color: rgb(237, 246, 240);
-  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46)); 
+  filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.46));
   align-items: center;
   position: static;
 }
 
 .about-header {
   font-size: clamp(3.2rem, 7vw, 9rem);
-  font-family: 'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Cinzel", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: bolder;
   color: rgb(237, 246, 240);
-  filter: drop-shadow(0 0 15px rgb(245, 245, 245)); 
-  margin-top: 7%; 
+  filter: drop-shadow(0 0 15px rgb(245, 245, 245));
+  margin-top: 7%;
 }
 
 .about-page-text {
@@ -193,17 +200,18 @@
   border-radius: 2%;
   padding: 10px;
   font-size: clamp(1.3rem, 4vw, 1.9rem);
-  font-family:'sans-serif','Lucida Sans Unicode';
+  font-family: "sans-serif", "Lucida Sans Unicode";
   font-weight: 300;
 }
 
 .message {
   font-size: 26px;
-  font-family:'Cinzel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Cinzel", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 700;
   color: rgba(30, 30, 164, 0.855);
   background-color: rgba(240, 248, 255, 0.686);
-  filter: drop-shadow(0 0 30px rgb(245, 245, 245)); 
+  filter: drop-shadow(0 0 30px rgb(245, 245, 245));
   align-items: center;
   position: static;
 }
@@ -222,8 +230,8 @@
   text-align: left;
   align-items: left;
   flex-direction: column;
-  font-family: 'Alegreya';
-  font: bold; 
+  font-family: "Alegreya";
+  font: bold;
   font-size: small;
   background-color: rgba(128, 128, 128, 0.485);
   border-radius: 10%;
@@ -232,15 +240,15 @@
 /*********************** FOOTER **************************/
 
 .footer-v {
-  font-family: 'Alegreya';
+  font-family: "Alegreya";
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
 .button-effect {
-  color: aliceblue; 
-  display: block; 
-  transform: scale(1.0);
+  color: aliceblue;
+  display: block;
+  transform: scale(1);
 }
 
 .button-effect:hover {
@@ -250,25 +258,25 @@
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.761)); */
 }
 
-.a:link, a:visited {
-  color: aliceblue; 
+.a:link,
+a:visited {
+  color: aliceblue;
 }
 
-a:hover { 
+a:hover {
   color: aliceblue;
 }
 
 .gh-link {
-  color: aliceblue; 
+  color: aliceblue;
 }
 
 .footer-name {
   font-size: large;
-  color: aliceblue; 
+  color: aliceblue;
 }
 
 .ap-link {
-  color: rgba(29, 235, 14, 0.869); 
+  color: rgba(29, 235, 14, 0.869);
   font-weight: bold;
 }
-
