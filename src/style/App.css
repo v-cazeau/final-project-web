@@ -237,6 +237,17 @@
   border-radius: 10%;
 }
 
+/*********************** Carousel Transitions **************************/
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
 /*********************** FOOTER **************************/
 
 .footer-v {

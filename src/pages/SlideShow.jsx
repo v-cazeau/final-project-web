@@ -4,12 +4,18 @@ import SoundCloud from "../components/SoundCloud";
 
 export default function SlideShow({ filterRegion, pictures, setPictures }) {
   const [showCarousel, setShowCarousel] = useState(false);
+  const [shuffledPictures, setShuffledPictures] = useState([]);
 
   useEffect(() => {
     // Wait for 200ms before showing the Carousel to trigger the fade-in animation
     const timer = setTimeout(() => setShowCarousel(true), 200);
+
+    // Shuffle the pictures array to display them in random order
+    const shuffled = shuffleArray(pictures);
+    setShuffledPictures(shuffled);
+
     return () => clearTimeout(timer);
-  }, []);
+  }, [pictures]);
 
   const handleDelete = (picId) => {
     fetch(
@@ -24,6 +30,16 @@ export default function SlideShow({ filterRegion, pictures, setPictures }) {
       .catch(alert);
   };
 
+  // Function to shuffle an array using the Fisher-Yates algorithm
+  const shuffleArray = (array) => {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+  };
+
   console.log(pictures);
 
   return (
@@ -32,11 +48,11 @@ export default function SlideShow({ filterRegion, pictures, setPictures }) {
         <Row>
           <Col>
             {showCarousel ? (
-              !pictures ? (
+              !shuffledPictures ? (
                 "Loading..."
               ) : (
                 <Carousel className="picture-box">
-                  {pictures.map((picture) => {
+                  {shuffledPictures.map((picture) => {
                     const thisId = picture._id;
                     return (
                       <Carousel.Item
